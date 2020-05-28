@@ -6,11 +6,9 @@ tokens = ["C", "O", "F", "E"]
 already_got = []
 
 # Pick random letters from a list (looped for testing purposes)
-keep_going = ""
-while  keep_going == "":
+for item in range(0, 5):
   user = input("Enter to continue: ")
   com = random.choice(tokens)
   already_got.append(com)
   print(already_got)
-  keep_going = input("Continue? ")
-print("End")
+  print()
